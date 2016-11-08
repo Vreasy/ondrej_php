@@ -11,7 +11,7 @@ default['php']['version_patch'] = '26'
 default['php']['version'] = "#{node['php']['version_major']}.#{node['php']['version_minor']}.#{node['php']['version_patch']}"
 # To avoid pollution with unwanted packages
 default['php']['package_options'] = '--no-install-recommends'
-default['php']['packages'] = %w(php5.6-bcmath php5.6-json php-memcached php-mbstring php5.6-intl php5.6-curl php5.6-cli php5.6 php5.6-fpm php5.6-mysql php-pear)
+default['php']['packages'] = %w(php5.6-bcmath php5.6-json php-memcached php5.6-mbstring php5.6-intl php5.6-curl php5.6-cli php5.6 php5.6-fpm php5.6-mysql php-pear)
 
 default['php']['conf_dir'] = '/etc/php/5.6/cli'
 default['php']['ext_conf_dir']  = '/etc/php/5.6/mods-available'
